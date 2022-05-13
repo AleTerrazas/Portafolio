@@ -191,3 +191,32 @@ body {
   font-size: 13px;
   transitition: all 1s Blink;
 }
+
+/* Proyecto */
+.proyecto {
+  display: flex;
+  background: rgb(209, 212, 214);
+}
+
+.proyecto .nav-proyecto {
+  writing-mode: vertical-rl;
+  height: 100vh;
+  border-right: 2px solid black;
+  background: white;
+}
+
+.proyecto .nav-proyecto ul {
+  transform: rotate(180deg);
+  display: grid;
+  place-items: center;
+  grid-auto-flow: column;
+  width: 10vh;
+}
+.proyecto .nav-proyecto ul .inicio {
+  font-size: 38px;
+}
+.proyecto main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
