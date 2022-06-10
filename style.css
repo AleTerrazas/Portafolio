@@ -220,3 +220,14 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
+
+/* imagenes grid */
+.imagenes-grid {
+    --grid-min: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--grid-min), 1fr));
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  grid-auto-rows: min-content;
+  overflow: hidden;
+}
